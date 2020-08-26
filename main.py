@@ -9,7 +9,7 @@ from bson import json_util
 app = Flask(__name__)
 
 # seed_type, seed_count
-cluster = MongoClient("mongodb+srv://aananya:tyagu2712@cluster0-ozbm1.mongodb.net/test?retryWrites=true&w=majority")
+cluster = MongoClient("mongodb+srv://aananya:<pwd>2@cluster0-ozbm1.mongodb.net/test?retryWrites=true&w=majority")
 db = cluster["seeds"]
 collection = db["seeds"]
 
